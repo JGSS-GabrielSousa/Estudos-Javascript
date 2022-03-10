@@ -10,8 +10,5 @@ function getSomething(){
     console.log(this.name);
 }
 
-getSomething(person); //Nothing
-getSomething(animal); //Nothing
-
-getSomething.call(person);
-getSomething.call(animal);
+getSomething.apply(person);
+getSomething.apply(animal);
